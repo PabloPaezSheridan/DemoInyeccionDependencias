@@ -1,0 +1,19 @@
+﻿ @model List<Pelicula>;
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Puntaje</th>
+        </tr>
+    </thead>
+    @foreach(var p in Model)
+    {
+        <tr>
+            <td>@p.Nombre</td>
+            <td>@p.Descripcion</td>
+            <td>@p.Puntaje</td>
+        </tr>
+    }
+</table>
+
